@@ -66,6 +66,8 @@ export default function RootLayout({
 				{/* Make the safe areas top/bottom the same color as the background */}
 				<div className="pointer-events-none fixed top-0 right-0 left-0 z-99999 h-[env(safe-area-inset-top)] bg-blue-800" />
 				<div className="pointer-events-none fixed right-0 bottom-0 left-0 z-99999 h-[env(safe-area-inset-bottom)] bg-blue-800" />
+				<div className="pointer-events-none fixed top-0 bottom-0 z-99999 h-[env(safe-area-inset-left)] bg-blue-800" />
+				<div className="pointer-events-none fixed top-0 bottom-0 z-99999 h-[env(safe-area-inset-right)] bg-blue-800" />
 				{children}
 			</body>
 		</html>
